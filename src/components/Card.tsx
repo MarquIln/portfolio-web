@@ -8,7 +8,9 @@ type Repository = {
 };
 
 export function CardComponent() {
-  const { data: repositories } = useFetch<Repository[]>('users/MarquIln/repos')
+  const { data: repositories } = useFetch<Repository[]>(
+    "users/MarquIln/repos"
+  );
 
   function handleClick(repoUrl: string) {
     window.open(repoUrl, "_blank");

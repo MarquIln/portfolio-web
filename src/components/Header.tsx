@@ -1,7 +1,8 @@
+'use client'
 type HeaderProps = {
   name: string
 }
-function Header({ name }: HeaderProps) {
+export function Header({ name }: HeaderProps) {
   return (
     <header
       className={`fixed left-0 top-0 z-50 flex w-full items-center justify-between border-b border-zinc-800 bg-zinc-950/70 px-6 shadow-xl backdrop-blur-sm transition-all duration-300 lg:px-24`}
@@ -14,5 +15,3 @@ function Header({ name }: HeaderProps) {
     </header>
   )
 }
-
-export default Header
